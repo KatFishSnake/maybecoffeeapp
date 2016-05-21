@@ -1,12 +1,16 @@
 # MaybeCoffeeApp
 This may turn out to be worthy coffee app but for now its just a bunch of experiments
 
-### Stack
+## Stack
+Backend
 - NodeJs (Express)
 - Sockets.io
 - CouchDb
 
-### Overview
+Frontend
+- Semantic-ui (temp)
+
+## Overview
 Currently to setup the project you need to:
 - Start CouchDb instance on it's default `localhost:5984`
 - npm install `package.json`

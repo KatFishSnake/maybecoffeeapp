@@ -1,0 +1,9 @@
+#order-body {
+    padding: .8rem;
+    border: 2px solid whitesmoke;
+    border-radius: 3pt;
+}
+
+#order-body .ui.fluid {
+    margin: 1rem 0;
+}

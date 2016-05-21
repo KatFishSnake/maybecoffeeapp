@@ -1,0 +1,22 @@
+{
+  "name": "coffeeapp",
+  "version": "0.0.1",
+  "description": "Maybe a coffeeapp for Noa",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "socket",
+    "node"
+  ],
+  "author": "Andre K",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-promise": "^0.4.0",
+    "nano": "^6.2.0",
+    "promise": "^7.1.1",
+    "socket.io": "^1.4.6"
+  }
+}

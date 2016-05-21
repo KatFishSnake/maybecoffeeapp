@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>Noa's Coffee</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel='icon' href='img/favicon.png' type='image/x-icon'/ >
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/order.css">
+        <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    </head>
+    <body>
+        <div class="ui fixed inverted menu">
+          <div class="ui container">
+            <a href="#" class="header item">
+              <!-- <img class="logo" src="assets/images/logo.png"> -->
+              Maybe coffee app
+            </a>
+            <a href="/order" class="item">Current Order</a>
+            <a href="/que" class="item">Que</a>
+          </div>
+        </div>
+
+        <div id="order-body" class="ui main text container">
+
+          <div class="ui yellow message">
+            <i class="star icon"></i>
+            Complete the form to place the order!
+          </div>
+
+          <div class="ui fluid input">
+              <input autocomplete="off" class="name" 
+           type="text" placeholder="Your name please">
+          </div>
+
+          <div class="ui fluid  selection dropdown">
+            <input type="hidden" class="coffee" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">What coffee whould you like?</div>
+            <div class="menu">
+              <div class="item" data-value="Americano">Americano</div>
+              <div class="item" data-value="Americano Misto">Americano Misto</div>
+              <div class="item" data-value="Cappuccino">Cappuccino</div>
+              <div class="item" data-value="Chai Latte">Chai Latte</div>
+              <div class="item" data-value="Espresso">Esspresso</div>
+              <div class="item" data-value="Flat White">Flat White</div>
+              <div class="item" data-value="Latte">Latte</div>
+              <div class="item" data-value="London Fog">London Fog</div>
+              <div class="item" data-value="Machiatto">Machiatto</div>
+              <div class="item" data-value="Mocha">Mocha</div>
+            </div>
+          </div>
+
+          <div class="ui fluid  selection dropdown">
+            <input type="hidden" class="shots" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">How many shots?</div>
+            <div class="menu">
+              <div class="item" data-value="0">No shots</div>
+              <div class="item" data-value="1">1 shot</div>
+              <div class="item" data-value="2">2 shots</div>
+              <div class="item" data-value="3">3 shots</div>
+              <div class="item" data-value="4">4 shots/death</div>
+            </div>
+          </div>
+
+          <div class="ui fluid  selection dropdown">
+            <input type="hidden" class="temp" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">How hot?</div>
+            <div class="menu">
+              <div class="item" data-value="Cold">Cold</div>
+              <div class="item" data-value="Warm">Warm</div>
+              <div class="item" data-value="Hot">Hot</div>
+            </div>
+          </div>
+
+          <div class="ui fluid  selection dropdown">
+            <input type="hidden" class="diary" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">Diary?</div>
+            <div class="menu">
+              <div class="item" data-value="None">None</div>
+              <div class="item" data-value="Milk">Milk</div>
+              <div class="item" data-value="Soy">Soy</div>
+              <div class="item" data-value="Almond">Almond</div>
+              <div class="item" data-value="Coconut">Coconut</div>
+            </div>
+          </div>
+
+          <div class="ui fluid  selection dropdown">
+            <input type="hidden" class="flavour" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">Flavour?</div>
+            <div class="menu">
+              <div class="item" data-value="None">None</div>
+              <div class="item" data-value="Flavour of the week">Flavour of the week</div>
+              <div class="item" data-value="Vanilla">Vanilla</div>
+              <div class="item" data-value="Hazelnut">Hazelnut</div>
+              <div class="item" data-value="Caramel">Caramel</div>
+              <div class="item" data-value="Honey">Honey</div>
+              <div class="item" data-value="Cinnamon">Cinnamon</div>
+              <div class="item" data-value="Cardamom">Cardamom</div>
+              <div class="item" data-value="Peppermint">Peppermint</div>
+            </div>
+          </div>
+
+          <div class="ui fluid input">
+              <input class="note" autocomplete="off"
+             type="text" placeholder="Add a pleasant note">
+          </div>
+
+          <button class="ui fluid huge primary button place-order">Place order</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+        <script src="semantic/semantic.min.js"></script>
+        <script>
+          $('.ui.dropdown').dropdown();
+        </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/service.js"></script>
+        <script src="js/order.js"></script>
+    </body>
+</html>

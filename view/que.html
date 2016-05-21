@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>Noa's Coffee</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel='icon' href='img/favicon.png' type='image/x-icon'/ >
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    </head>
+    <body>
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <a href="#" class="header item">
+                    <i class="coffee icon"></i>
+                    Maybe coffee app
+                </a>
+                <a href="/order" class="item">Current Order</a>
+                <a href="/que" class="item">Que</a>
+            </div>
+        </div>
+
+        <div id="que-body" class="ui main text container">
+            <div class="ui list"></div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/service.js"></script>
+        <script src="js/que.js"></script>
+    </body>
+</html>
